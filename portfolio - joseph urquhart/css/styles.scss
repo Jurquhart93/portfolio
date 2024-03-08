@@ -1,0 +1,84 @@
+:root {
+    --colour--black: #000000;
+    --colour--white: #ffffff;
+
+    //with my background being black i wanted silver to contrast with the black
+    --colour-silver: #E5E5E5;
+    // and an orange colour for my accents 
+    --colour-orange: #FCA311;
+}
+
+*, *::before, *::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--colour-silver);
+    background-color: var(--colour--black);
+}
+
+.title {
+    &--large {
+        font-size: 5rem;
+    }
+}
+
+.header {
+    position: sticky;
+    top: 0;
+
+    background-color: var(--colour--black);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+
+    padding: 2em 0;
+
+    border-bottom: 1px solid var(--colour-orange);
+    &__links {
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: var(--colour-silver);
+        transition: 300ms ease-out;
+        
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+
+        &:hover, &:focus{
+            color: var(--colour--white);
+            transition: 300ms ease-in;
+
+        }
+    }
+}
+
+.hero, .about-me, .portfolio {
+    min-height: 100lvh;
+    padding-top: 8rem;
+
+    & h1, h2 {
+        text-align: center;
+    }
+}
+
+
+.hero {   
+    & p {
+        margin-top: 3rem;
+        
+        font-size: 1.25;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
