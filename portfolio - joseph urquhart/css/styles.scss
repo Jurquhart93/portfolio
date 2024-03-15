@@ -1,11 +1,11 @@
 :root {
+    // COLOURS
     --colour--black: #000000;
     --colour--white: #ffffff;
-
-    //with my background being black i wanted silver to contrast with the black
     --colour-silver: #E5E5E5;
-    // and an orange colour for my accents 
     --colour-orange: #FCA311;
+
+    // FONTS
 }
 
 *, *::before, *::after {
@@ -62,9 +62,8 @@ body {
     }
 }
 
-.hero, .about-me, .portfolio {
-    min-height: 100lvh;
-    padding-top: 8rem;
+.hero, .about-me, .portfolio, .contact-info {
+    min-height: 80lvh;
 
     & h1, h2 {
         text-align: center;
@@ -79,6 +78,19 @@ body {
         font-size: 1.25;
         text-align: center;
         text-transform: uppercase;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+
+    padding: 2rem 0;
+
+    border-top: 1px solid var(--colour-orange);
+
+    &__container {
+        width: 1400px;
     }
 }
 

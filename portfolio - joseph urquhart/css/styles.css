@@ -51,11 +51,10 @@ body {
   transition: 300ms ease-in;
 }
 
-.hero, .about-me, .portfolio {
-  min-height: 100lvh;
-  padding-top: 8rem;
+.hero, .about-me, .portfolio, .contact-info {
+  min-height: 80lvh;
 }
-.hero h1, .hero h2, .about-me h1, .about-me h2, .portfolio h1, .portfolio h2 {
+.hero h1, .hero h2, .about-me h1, .about-me h2, .portfolio h1, .portfolio h2, .contact-info h1, .contact-info h2 {
   text-align: center;
 }
 
@@ -64,4 +63,14 @@ body {
   font-size: 1.25;
   text-align: center;
   text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--colour-orange);
+}
+.footer__container {
+  width: 1400px;
 }/*# sourceMappingURL=styles.css.map */
