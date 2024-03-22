@@ -21,6 +21,15 @@ body {
   background-color: var(--colour--black);
 }
 
+iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
+  max-width: 100%;
+  padding: 2px;
+  border: 2px solid var(--colour-orange);
+  border-radius: 50px 0 50px 0;
+}
+
 .title--large {
   font-size: 5rem;
 }
@@ -56,6 +65,7 @@ body {
 }
 .hero h1, .hero h2, .about-me h1, .about-me h2, .portfolio h1, .portfolio h2, .contact-info h1, .contact-info h2 {
   text-align: center;
+  padding-bottom: 0.5em;
 }
 
 .hero p {
@@ -63,6 +73,42 @@ body {
   font-size: 1.25;
   text-align: center;
   text-transform: uppercase;
+}
+
+.contact-info__container {
+  padding: 3rem 0;
+  text-align: center;
+}
+.contact-info__details {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  align-self: center;
+}
+.contact-info__details a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+.contact-info__details a:hover {
+  color: rgb(207, 207, 207);
+  transition: color 0.2s ease-in;
+}
+.contact-info iframe {
+  width: 80%;
+  margin-inline: auto;
+}
+@media (min-width: 900px) {
+  .contact-info__container {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-info iframe {
+    width: 100%;
+    margin-inline: auto;
+  }
 }
 
 .footer {
