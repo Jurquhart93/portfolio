@@ -25,6 +25,5 @@
   </section>
   <section class="section" id="contact-info">
     <h1>Contact Info</h1>
-    <p>KYLE WUZ HERE</p>
   </section>
 </main>
